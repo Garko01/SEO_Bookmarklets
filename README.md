@@ -7,5 +7,7 @@ To set up and use the bookmarklet, follow these steps:
 4. **Use the Bookmarklet**: Visit the page where you want to use it, then click the bookmarklet from your bookmarks bar. 
    - If a shield icon with an "X" appears near the URL, click it, select "Load Unsafe Scripts," and then click the bookmarklet again. 
 
+Note: Each script is formatted as a single line, as it would appear in the URL field of a bookmarklet.
+
 # What is a bookmarklet
 A bookmarklet is a small piece of JavaScript code saved as a browser bookmark. It allows users to perform specific tasks on a webpage with a single click, like quickly modifying page content or sharing links.
