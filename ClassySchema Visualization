@@ -1,2 +1,2 @@
-// Opens a new window to ClassySchema's Visualization tool, passing the current page's URL as an encoded parameter
+// Opens a new window to ClassySchema's Visualization tool to visualize current page's schema markup
 javascript:window.open('https://classyschema.org/Visualisation?url=%27 + encodeURIComponent(location.href));
