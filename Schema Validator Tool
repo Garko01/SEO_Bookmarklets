@@ -1,0 +1,2 @@
+// Opens a new window to Schema.org's Structured Data Validator to check the schema markup of the current page  
+`javascript:void(window.open('https://validator.schema.org/#url=' + encodeURIComponent(location.href)));`
