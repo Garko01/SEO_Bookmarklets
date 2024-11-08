@@ -1,0 +1,2 @@
+// Copies all links from the page, excluding those that match specified selectors, to the clipboard as plain text
+javascript:(function() { var links = document.querySelectorAll('a[jsname="UWckNb"]'); var excludeSelectors = ['.Wt5Tfe a[jsname="UWckNb"]']; var urls = []; links.forEach(function(link) { var exclude = false; excludeSelectors.forEach(function(selector) { if (link.closest(selector)) { exclude = true; } }); if (!exclude) { urls.push(link.href); } }); if (urls.length > 0) { var urlsText = urls.join('\n'); navigator.clipboard.writeText(urlsText); }})();
