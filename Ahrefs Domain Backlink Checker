@@ -1,0 +1,2 @@
+// Opens a new window in Ahrefs Backlink Checker to view backlink data for the current page's domain
+javascript:(function() { const domain = window.location.hostname; const ahrefsUrl = 'https://ahrefs.com/backlink-checker/?input=' + domain + '&mode=subdomains'; window.open(ahrefsUrl, '_blank');})();
