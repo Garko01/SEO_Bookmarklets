@@ -1,0 +1,2 @@
+// Opens a new window in Ahrefs Traffic Checker to analyze traffic metrics for the current page's domain  
+javascript:(function() { const domain = window.location.hostname; const ahrefsUrl = 'https://ahrefs.com/traffic-checker/?input=' + domain + '&mode=subdomains'; window.open(ahrefsUrl, '_blank');})();`
