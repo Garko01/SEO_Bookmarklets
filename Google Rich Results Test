@@ -1,0 +1,2 @@
+// Opens a new window to Google's Rich Results Test tool to analyze the current page's structured data for eligibility in rich search results
+javascript:void(window.open('https://search.google.com/test/rich-results?url=' + encodeURIComponent(location.href)));
