@@ -1,0 +1,2 @@
+// Opens a new window to Google PageSpeed Insights to analyze the current page's performance metrics and optimization suggestions
+javascript:void(window.open('https://pagespeed.web.dev/analysis?url=' + encodeURIComponent(location.href)));
