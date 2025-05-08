@@ -1,0 +1,27 @@
+javascript:(function() {
+  try {
+    const segments = document.querySelectorAll(
+      'ytd-transcript-segment-renderer yt-formatted-string.segment-text'
+    );
+
+    if (!segments.length) {
+      alert('No transcript segments found. Make sure the transcript is open.');
+      return;
+    }
+
+    const transcript = Array.from(segments)
+      .map(el => el.textContent.trim())
+      .join('\n');
+
+    navigator.clipboard.writeText(transcript)
+      .then(() => {
+        alert('Transcript copied to clipboard!');
+      })
+      .catch(err => {
+        console.error(err);
+        alert('Failed to copy transcript.');
+      });
+  } catch (e) {
+    alert('Error extracting transcript: ' + e.message);
+  }
+})();
